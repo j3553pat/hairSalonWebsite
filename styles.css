@@ -1,6 +1,92 @@
 body {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
-    grid-template-areas: ;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: .1fr auto auto auto auto;
+    grid-template-areas: 
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "nav main main"
+        "footer footer footer";
+        background-image: linear-gradient(rgba(0,0,0,0.3)0%, rgba(0,0,0,0.8) 100%), url(salon.jpg);
+        background-size: cover;
+        background-position: fixed;
+        background-repeat: no-repeat; 
+        background-size: 100% 120%;
+        overflow: hidden;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    font-family: 'Island Moments', cursive;
+}
+
+h1 {
+    font-size: 100px;
+    color: whitesmoke;
+    transition: all .4s;
+}
+
+h1:hover {
+    font-size: 120px;
+}
+
+nav {
+    grid-area: nav;
+    font-size: 35px;
+    color: whitesmoke;
+    font-family: 'Island Moments';
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 10px 10px 10px 0;
+    transition: all .5s;
+}
+
+li:hover {
+    font-size: 60px;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    justify-content: flex-start;
+}
+
+section {
+    color: whitesmoke;
+    font-family: 'Island Moments';
+    font-size: 35px;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        display:grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    
 }
