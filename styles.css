@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: .1fr auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
     grid-template-areas: 
         "header header header"
         "nav main main"
@@ -10,27 +10,22 @@ body {
         "footer footer footer";
         background-image: linear-gradient(rgba(0,0,0,0.3)0%, rgba(0,0,0,0.8) 100%), url(salon.jpg);
         background-size: cover;
-        background-position: fixed;
         background-repeat: no-repeat; 
-        background-size: 100% 120%;
-        overflow: hidden;
+        overflow:auto;
+        height: 100vh;
 }
 
 header {
     grid-area: header;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: 'Island Moments', cursive;
+    margin: 0;
 }
 
 h1 {
     font-size: 100px;
     color: whitesmoke;
-    transition: all .4s;
-}
-
-h1:hover {
-    font-size: 120px;
+    text-shadow: 2px 2px 5px rgb(234, 243, 104);
 }
 
 nav {
@@ -50,37 +45,44 @@ li {
 }
 
 li:hover {
-    font-size: 60px;
+    font-size: 40px;
 }
 
 main {
     grid-area: main;
     display: flex;
-    justify-content: flex-start;
+    justify-content: f;
 }
 
-section {
+span {
+    color: whitesmoke;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
     color: whitesmoke;
     font-family: 'Island Moments';
     font-size: 35px;
+    margin: 0;
 }
 
 footer {
     grid-area: footer;
-    display: flex;
-    justify-content: center;
     color: whitesmoke;
+    text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media (max-width: 767px) {
     body {
         display:grid;
+        height: max-content;
         grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-template-areas: 
             "header"
-            "nav"
             "main"
+            "nav"
             "footer";
     }
 
@@ -88,5 +90,23 @@ footer {
         display: flex;
         justify-content: center;
     }
-    
+
+    main {
+        text-align: center;
+    }
+
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+    body {
+        display:grid;
+        height: 100vh;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+            "header header"
+            "nav main"
+            "nav main"
+            "footer footer";
+    }
 }
