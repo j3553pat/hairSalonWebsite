@@ -53,25 +53,26 @@ ul {
 main {
     grid-area: main;
     display: flex;
+    flex-wrap: wrap;
     justify-content:flex-end;
     height: 900px;
     width: 100%;
-    background-size:cover;
+    background-size: 100% 90%;
     background-image: url(josh-miller-aPvjf5DDc_I-unsplash.jpg);
     background-repeat: no-repeat;
-   
+   padding: 0;
 }
 
 
-article {
+.sidenote {
     display: flex;
     color: whitesmoke;
     font-family: 'Poor Story';
     flex-direction: column;
     justify-content: center;
     font-size: 30px;
-    height: 800px;
-    width: 475px;
+    height: 775px;
+    width: 500px;
     margin: 0%;
 }
 
@@ -92,3 +93,67 @@ button {
     font-family: 'Poor Story';
     color: whitesmoke;
 }
+
+footer {
+    grid-area: footer;
+}
+
+.card-container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;  
+    flex-wrap: wrap;
+}
+
+
+ img {
+    height: 400px;
+    width: 450px;
+    border: solid 4px rgb(51, 66, 197);
+    box-shadow: 5px 10px 5px black;
+    margin: 0;
+ }
+
+ .label {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Island Moments';
+ }
+
+ #end {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 66, 197);
+    font-family: 'Poor Story';
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+ }
+
+ i, p {
+    margin: 0;
+    padding: 5px;
+ }
+
+ @media (max-width: 567px) {
+    body{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-area: 
+        "header"
+        "nav"
+        "main"
+        "main"
+        "footer";
+    } 
+
+    img {
+        height: 100px;
+        width: 150px;
+    }
+
+    .card-container {
+        padding-left: 10px;
+    }
+ }
