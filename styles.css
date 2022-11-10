@@ -8,6 +8,7 @@ body {
         "main main main"
         "footer footer footer";
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 
 header {
@@ -70,6 +71,7 @@ main {
 }
 
 .title {
+    display: inline;
     background-color: rgb(51, 66, 197);
 }
 
