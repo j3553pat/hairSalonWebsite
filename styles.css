@@ -1,7 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto .5fr .5fr .5fr auto;
     grid-template-areas: 
         "header header header"
         "nav main main"
@@ -45,7 +45,8 @@ li {
 }
 
 li:hover {
-    font-size: 40px;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgb(234, 243, 104);
 }
 
 main {
@@ -77,8 +78,8 @@ footer {
     body {
         display:grid;
         height: max-content;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr .5fr .5fr .5fr;
         grid-template-areas: 
             "header"
             "main"
@@ -101,8 +102,8 @@ footer {
     body {
         display:grid;
         height: 100vh;
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: .4fr .5fr;
+        grid-template-rows: auto auto auto auto ;
         grid-template-areas: 
             "header header"
             "nav main"
