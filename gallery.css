@@ -61,6 +61,14 @@ main {
     text-align: center;
 }
 
+h2 {
+    font-size: 50px;
+    background-color: black;
+    margin: 2% 30%;
+    padding: 1%;
+    color: whitesmoke;
+}
+
 .card-container {
     display: flex;
     width: 100vw;
