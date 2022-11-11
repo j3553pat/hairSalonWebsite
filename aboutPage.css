@@ -147,3 +147,27 @@ i, p {
         
     }
 }
+
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "nav nav"
+            "main main"
+            "footer footer";
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    .link {
+        color: whitesmoke;
+    }
+
+    #end {
+        background-color: white;
+        color: black;
+    }
+}

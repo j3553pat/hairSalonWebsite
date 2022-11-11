@@ -60,6 +60,7 @@ main {
     background-image: url(josh-miller-aPvjf5DDc_I-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    filter: grayscale(100%);
 }
 
 .sidenote {
@@ -106,6 +107,7 @@ footer {
     border: solid 4px rgb(51, 66, 197);
     box-shadow: 5px 10px 5px black;
     margin-top: 5%;
+    filter: grayscale(100%);
 }
 
 .label {
@@ -137,10 +139,11 @@ i, p {
         grid-template-rows: auto auto auto auto auto;
         grid-area:
             "header"
-            "nav""main"
-                "main"
-                "footer";
-            }
+            "nav"
+            "main"
+            "main"
+            "footer";
+         }
             
             ul {
                 display: flex;
