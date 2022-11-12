@@ -81,7 +81,6 @@ h2 {
     height: 300px;
     width: 350px;
     border: solid 4px rgb(51, 66, 197);
-    box-shadow: 5px 10px 5px black;
     margin-top: 5%;
     filter: grayscale(100%);
     transition: all .3s;
