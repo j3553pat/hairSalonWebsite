@@ -61,6 +61,11 @@ main {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     filter: grayscale(100%);
+    transition: all 1s;
+}
+
+main:hover {
+    filter: grayscale(0%);
 }
 
 .sidenote {

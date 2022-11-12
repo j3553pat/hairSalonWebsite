@@ -113,3 +113,61 @@ button {
     background-color: white;
     color: black;
 }
+
+button:active {
+    background-color: black;
+    color: whitesmoke;
+}
+
+@media (max-width:767px) {
+    body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        grid-area:
+            "header"
+            "nav"
+            "main"
+            "footer";
+         }
+            
+            ul {
+                display: flex;
+                height: 250px;
+                flex-direction: column;
+                align-items: center;
+            }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    body {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "header header"
+            "nav main"
+            "nav main"
+            "footer footer";
+        background-color: black;
+        color: whitesmoke;
+    }
+
+    ul {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 600px;
+        width: 50px;
+        font-size: 100px;
+    }
+
+    h3 {
+        margin: 0 25%;
+    }
+
+    .link {
+        color: whitesmoke;
+    }
+
+}

@@ -30,7 +30,7 @@
     <main>
         <h2>Let's Keep In Touch</h2>
         <h3>If you have any questions about careers, appointments, or suggestions, please fill out the contact form.</h3>
-       <form action="results.html" method="GET" enctype="multipart/form-data">
+       <form action="info.html" method="GET" enctype="multipart/form-data">
         <div class="contactlist">
             <label for="name">Name: </label>
             <input type="text" name="name" id="name">
@@ -50,7 +50,7 @@
         <div class="contactlist">
             <textarea id="comments" name="comments" minlength="20" maxlength="500" cols="50" rows="15">Please briefly explain what you need to speak about in here.</textarea>
         </div>
-        <button type="submit" id="submit" class="submit" onclick="submitBtn()">Send</button>
+        <button type="submit" id="submit" class="submit" onclick="sendBtn()">Send</button>
        </form>
     </main>
     <footer>
@@ -59,6 +59,7 @@
                 class="fa-brands fa-instagram"></i><i class="fa-brands fa-square-snapchat"></i><i
                 class="fa-brands fa-square-facebook"></i>
         </section>
+        <script src="scripts.js"></script>
     </footer>
 </body>
 </html>
